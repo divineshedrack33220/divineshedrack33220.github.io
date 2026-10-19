@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mailgeko — Self-Hostable Email Marketing Platform | Divine Shedrack</title>
+  <meta name="description" content="Mailgeko by Divine Shedrack: self-hostable email marketing — contacts, campaigns, automation, analytics and Stripe billing. Next.js + Go + Docker, ships as one image. Open alternative to Mailchimp.">
+  <meta name="keywords" content="Mailgeko, self-hosted email marketing, open source Mailchimp alternative, email campaign platform Go, Divine Shedrack Mailgeko, Docker email marketing">
+  <meta name="author" content="Divine Shedrack">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://divineshedrack33220.github.io/work/mailgeko.html">
+  <meta property="og:title" content="Mailgeko — Self-Hostable Email Marketing | Divine Shedrack">
+  <meta property="og:description" content="Email marketing you can host yourself — campaigns, tracking, analytics, Stripe. One Docker image. By Divine Shedrack.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://divineshedrack33220.github.io/work/mailgeko.html">
+  <meta property="og:image" content="https://divineshedrack33220.github.io/assets/avatar.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Mailgeko",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Linux (Docker)",
+    "description": "Self-hostable email marketing platform: contacts, lists, segments, templates, campaigns, open/click tracking, analytics, AI copy studio and Stripe billing. Next.js + Go API + async worker in a single Docker image.",
+    "author": {
+      "@type": "Person",
+      "name": "Divine Shedrack",
+      "url": "https://divineshedrack33220.github.io/"
+    }
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230a0a0a'/><text x='16' y='22' font-family='monospace' font-size='14' font-weight='bold' fill='%23b8ff3c' text-anchor='middle'>DS</text></svg>">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://divineshedrack33220.github.io/" },
+      { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://divineshedrack33220.github.io/#projects" },
+      { "@type": "ListItem", "position": 3, "name": "Mailgeko" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <nav class="nav" aria-label="Primary">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <span class="nav-logo-mark" aria-hidden="true">DS</span>
+        <span class="nav-logo-name">Divine Shedrack</span>
+      </a>
+      <a href="../resume.html" class="nav-cta" target="_blank" rel="noopener">Resume ↗</a>
+    </div>
+  </nav>
+
+  <main class="workpage">
+    <div class="container">
+      <a class="workpage-back" href="../index.html#projects">← All work</a>
+      <p class="workpage-eyebrow mono">CASE STUDY · OPEN SOURCE CORE</p>
+      <h1>Mailgeko</h1>
+      <p class="workpage-lede">Self-hostable email marketing — audiences, campaigns, automation and analytics in one deployable unit. The whole platform ships as a single Docker image.</p>
+
+      <div class="workpage-grid">
+        <div class="workpage-body">
+          <h2>The problem</h2>
+          <p>SaaS email tools lock your contact data, take a cut as you scale, and can't run on your own infrastructure. Self-hosted alternatives are usually abandoned projects with painful deploys.</p>
+
+          <h2>The approach</h2>
+          <p>Mailgeko is built boring and portable: standard SQL, Redis-backed queues, signed webhooks, one container. The Next.js web app, the Go API and the async worker run side by side in a single image — as easy on a laptop as on a production VPS.</p>
+          <ul>
+            <li>Contacts with CSV import, tags, custom fields, dedupe; lists + dynamic segments</li>
+            <li>Reusable templates with per-recipient rendering</li>
+            <li>Campaign scheduling with open/click/unsubscribe tracking</li>
+            <li>Analytics dashboards: series, links, devices, countries, per-recipient trails</li>
+            <li>Optional AI studio for subject lines and copy</li>
+            <li>Stripe (or local gateway) billing and sending limits</li>
+            <li>Delivery events via signed webhooks (Resend)</li>
+          </ul>
+
+          <h2>Stack</h2>
+          <p>Next.js 16 · Go 1.25 · MySQL/MariaDB · Redis · Postgres + pgvector · Resend · Stripe · Docker (one image).</p>
+
+          <h2>Outcome</h2>
+          <p>A complete Mailchimp-class marketing stack you own completely.</p>
+
+          <div class="workpage-cta">
+            <a class="btn btn-ghost" href="https://github.com/divineshedrack33220/mailgeko" target="_blank" rel="noopener">View on GitHub ↗</a>
+          </div>
+        </div>
+
+        <aside class="workpage-aside">
+          <h3>At a glance</h3>
+          <dl>
+            <div><dt>Role</dt><dd>Creator — full stack</dd></div>
+            <div><dt>Status</dt><dd>Open source core</dd></div>
+            <div><dt>Domain</dt><dd>Email marketing · SaaS · Self-host</dd></div>
+            <div><dt>Frontend</dt><dd>Next.js 16</dd></div>
+            <div><dt>Backend</dt><dd>Go 1.25 API + async worker</dd></div>
+            <div><dt>Data</dt><dd>MySQL, Redis, Postgres + pgvector</dd></div>
+            <div><dt>Deploy</dt><dd>One Docker image</dd></div>
+          </dl>
+          <a class="btn btn-primary btn-sm" href="../index.html#contact" style="width:100%;text-align:center">Hire Divine Shedrack</a>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="mono">© 2026 Divine Shedrack — Abuja, Nigeria</p>
+      <p class="footer-note"><a href="../index.html">Home</a> · <a href="../resume.html">Resume</a></p>
+    </div>
+  </footer>
+</body>
+</html>

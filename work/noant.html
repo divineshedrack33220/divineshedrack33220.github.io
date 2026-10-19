@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOANT Enterprise — AI Customer Support Platform | Divine Shedrack</title>
+  <meta name="description" content="NOANT Enterprise is an AI + human-in-the-loop customer support platform by Divine Shedrack: LLM triage across WhatsApp, Telegram, Messenger and web widgets. Go, React, Redis, custom vector search.">
+  <meta name="keywords" content="NOANT, AI customer support platform, human in the loop AI, WhatsApp chatbot Nigeria, Divine Shedrack NOANT, LLM support automation">
+  <meta name="author" content="Divine Shedrack">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://divineshedrack33220.github.io/work/noant.html">
+  <meta property="og:title" content="NOANT Enterprise — AI Customer Support | Divine Shedrack">
+  <meta property="og:description" content="AI + human-in-the-loop customer support across 4 messaging channels. Built by Divine Shedrack with Go, React and LLMs.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://divineshedrack33220.github.io/work/noant.html">
+  <meta property="og:image" content="https://divineshedrack33220.github.io/assets/avatar.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "NOANT Enterprise",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "Autonomous and human-in-the-loop AI customer support platform with multi-channel messaging across WhatsApp, Telegram, Facebook Messenger and web widgets.",
+    "author": {
+      "@type": "Person",
+      "name": "Divine Shedrack",
+      "url": "https://divineshedrack33220.github.io/"
+    },
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Self-hostable" }
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230a0a0a'/><text x='16' y='22' font-family='monospace' font-size='14' font-weight='bold' fill='%23b8ff3c' text-anchor='middle'>DS</text></svg>">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://divineshedrack33220.github.io/" },
+      { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://divineshedrack33220.github.io/#projects" },
+      { "@type": "ListItem", "position": 3, "name": "NOANT" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <nav class="nav" aria-label="Primary">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <span class="nav-logo-mark" aria-hidden="true">DS</span>
+        <span class="nav-logo-name">Divine Shedrack</span>
+      </a>
+      <a href="../resume.html" class="nav-cta" target="_blank" rel="noopener">Resume ↗</a>
+    </div>
+  </nav>
+
+  <main class="workpage">
+    <div class="container">
+      <a class="workpage-back" href="../index.html#projects">← All work</a>
+      <p class="workpage-eyebrow mono">CASE STUDY · PRIVATE PRODUCT</p>
+      <h1>NOANT Enterprise</h1>
+      <p class="workpage-lede">An autonomous &amp; human-in-the-loop AI customer support platform. High-confidence questions answered by an LLM; everything else escalated to a human in real time — across WhatsApp, Telegram, Messenger and web widgets.</p>
+
+      <div class="workpage-grid">
+        <div class="workpage-body">
+          <h2>The problem</h2>
+          <p>Support teams drown in repetitive questions while customers wait hours for answers that an AI could have handled. Pure chatbots fail the moment a question needs judgment — and handoffs lose context.</p>
+
+          <h2>The approach</h2>
+          <p>NOANT uses a hybrid automation model: an LLM answers high-confidence questions instantly, and anything below the confidence threshold is escalated to a human agent with the full conversation attached. Custom Go vector search does semantic QA-pair matching before the model is even called — cheaper, faster, and more predictable than raw LLM calls.</p>
+          <ul>
+            <li>Multi-tenant messaging hub: WhatsApp, Telegram, Facebook Messenger, embedded web widgets</li>
+            <li>Confidence-based triage: AI answer, AI + suggest, or human escalation</li>
+            <li>Custom embeddings &amp; semantic QA matching written in Go — no external vector DB</li>
+            <li>Redis-backed job queue for async delivery and AI history</li>
+            <li>Subscription billing and credit packs via Polar</li>
+          </ul>
+
+          <h2>Stack</h2>
+          <p>Go 1.25 + Gin · React 18 + TypeScript + Vite · LLM (Llama 3.3 via Groq) · TiDB Cloud (MySQL-compatible) · Redis (Upstash) · Polar payments · Render + Docker.</p>
+
+          <h2>Outcome</h2>
+          <p>A multi-tenant platform where AI handles the volume and humans handle the edge cases — with context preserved across the handoff. The agent runs the same triage pattern used in production.</p>
+
+          <div class="workpage-cta">
+            <a class="btn btn-ghost" href="https://github.com/divineshedrack33220" target="_blank" rel="noopener">GitHub profile</a>
+          </div>
+        </div>
+
+        <aside class="workpage-aside">
+          <h3>At a glance</h3>
+          <dl>
+            <div><dt>Role</dt><dd>Architect &amp; sole engineer</dd></div>
+            <div><dt>Status</dt><dd>Private product</dd></div>
+            <div><dt>Domain</dt><dd>AI · Customer support · Messaging</dd></div>
+            <div><dt>Backend</dt><dd>Go 1.25, Gin, Redis, TiDB</dd></div>
+            <div><dt>Frontend</dt><dd>React 18, TypeScript, Vite</dd></div>
+            <div><dt>AI</dt><dd>LLM triage, custom Go vector search</dd></div>
+            <div><dt>Channels</dt><dd>WhatsApp, Telegram, Messenger, Web</dd></div>
+          </dl>
+          <a class="btn btn-primary btn-sm" href="../index.html#contact" style="width:100%;text-align:center">Hire Divine Shedrack</a>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="mono">© 2026 Divine Shedrack — Abuja, Nigeria</p>
+      <p class="footer-note"><a href="../index.html">Home</a> · <a href="../resume.html">Resume</a></p>
+    </div>
+  </footer>
+</body>
+</html>

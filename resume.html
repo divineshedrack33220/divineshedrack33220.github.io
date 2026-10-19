@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume — Divine Shedrack</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #111;
+      --dim: #444;
+      --faint: #777;
+      --line: #ddd;
+      --accent: #3d6b00;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--ink);
+      background: #f4f4f4;
+      line-height: 1.5;
+      font-size: 14.5px;
+    }
+    .toolbar {
+      position: sticky; top: 0; z-index: 10;
+      background: #111; color: #fff;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 12px 20px;
+    }
+    .toolbar span { font-family: 'JetBrains Mono', monospace; font-size: .8rem; }
+    .toolbar button {
+      background: #b8ff3c; color: #111; border: 0;
+      font: 600 .85rem 'Inter', sans-serif;
+      padding: 9px 18px; cursor: pointer;
+    }
+    .toolbar button:hover { background: #cfff6b; }
+    .toolbar a { color: #b8ff3c; font-size: .8rem; text-decoration: none; }
+    .page {
+      max-width: 800px; margin: 30px auto; background: #fff;
+      padding: 56px 64px; box-shadow: 0 2px 18px rgba(0,0,0,.12);
+    }
+    header { border-bottom: 2px solid var(--ink); padding-bottom: 18px; margin-bottom: 24px; }
+    h1 { font-size: 28px; font-weight: 700; letter-spacing: -.5px; }
+    .role { font-size: 14px; color: var(--dim); margin-top: 2px; }
+    .contacts {
+      display: flex; flex-wrap: wrap; gap: 6px 16px;
+      margin-top: 10px; font-size: 12.5px; color: var(--dim);
+    }
+    .contacts a { color: var(--ink); }
+    h2 {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px; font-weight: 500; letter-spacing: 1.5px;
+      text-transform: uppercase; color: var(--accent);
+      border-bottom: 1px solid var(--line); padding-bottom: 5px;
+      margin: 22px 0 12px;
+    }
+    .summary { color: var(--dim); }
+    .job { margin-bottom: 16px; }
+    .job-head { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    .job-head strong { font-size: 14.5px; }
+    .job-head .when { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--faint); }
+    .job-org { font-size: 13px; color: var(--accent); margin-bottom: 4px; }
+    .job ul { padding-left: 18px; color: var(--dim); }
+    .job li { margin-bottom: 3px; font-size: 13.5px; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .grid-2 ul { padding-left: 18px; color: var(--dim); }
+    .grid-2 li { margin-bottom: 3px; font-size: 13.5px; }
+    @media print {
+      body { background: #fff; font-size: 12.5px; }
+      .toolbar { display: none; }
+      .page { box-shadow: none; margin: 0; padding: 0; max-width: none; }
+      a { text-decoration: none; }
+    }
+    @media (max-width: 640px) {
+      .page { padding: 32px 24px; margin: 0; }
+      .grid-2 { grid-template-columns: 1fr; }
+      .toolbar span { display: none; }
+      .toolbar { justify-content: space-between; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <span>resume.html — open in browser → Print → Save as PDF</span>
+    <div style="display:flex;gap:16px;align-items:center">
+      <a href="index.html">← Back to site</a>
+      <button onclick="window.print()">Download PDF</button>
+    </div>
+  </div>
+
+  <main class="page">
+    <header>
+      <h1>Divine Shedrack</h1>
+      <p class="role">Senior Software Engineer — Full-stack (Go, React, Flutter) · AI Products · Real-time Systems</p>
+      <div class="contacts">
+        <span>Abuja, Nigeria</span>
+        <a href="mailto:divineshedrack1@gmail.com">divineshedrack1@gmail.com</a>
+        <a href="https://wa.me/2349033843841">+234 903 384 3841</a>
+        <a href="https://github.com/divineshedrack33220">github.com/divineshedrack33220</a>
+        <a href="https://vaultwinltd.com/">vaultwinltd.com</a>
+      </div>
+    </header>
+
+    <h2>Summary</h2>
+    <p class="summary">
+      Senior engineer with 7+ years shipping production software end-to-end. Deep experience in Go
+      services, React/TypeScript frontends, Flutter mobile, LLM-powered products, and real-time
+      systems (WebSockets, presence, live messaging). Owns architecture through deployment —
+      databases, queues, billing, and Dockerized releases. Has built and shipped an AI
+      multi-channel support platform, a self-custodial stablecoin vault on Ethereum, and a
+      self-hostable email marketing suite.
+    </p>
+
+    <h2>Experience</h2>
+    <div class="job">
+      <div class="job-head">
+        <strong>Senior Software Engineer</strong>
+        <span class="when">Current</span>
+      </div>
+      <p class="job-org">Vaultwin Limited — vaultwinltd.com · Abuja, Nigeria</p>
+      <ul>
+        <li>Full-stack engineering on enterprise products: Go services, web frontends, third-party integrations.</li>
+        <li>Owns features from schema design through production deployment and monitoring.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-head">
+        <strong>Independent Product Engineer</strong>
+        <span class="when">Ongoing</span>
+      </div>
+      <p class="job-org">NOANT · GlobMint · Mailgeko · Zukaping</p>
+      <ul>
+        <li>NOANT Enterprise — AI + human-in-the-loop customer support: Go/Gin API, React dashboard, LLM orchestration, multi-channel messaging (WhatsApp, Telegram, Messenger, web widgets), custom vector search, Redis job queue.</li>
+        <li>GlobMint — self-custodial USDC savings &amp; payments: Solidity CREATE2 vault clones, Go indexer/ledger API, Flutter client; live on Sepolia testnet.</li>
+        <li>Mailgeko — self-hostable email marketing: Next.js 16 + Go API + async worker in a single Docker image; campaigns, tracking, analytics, Stripe billing.</li>
+        <li>Zukaping — real-time social discovery: Flutter + Go/Gin + WebSockets + MongoDB.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-head">
+        <strong>Full-Stack Developer</strong>
+        <span class="when">Earlier career</span>
+      </div>
+      <p class="job-org">Web platforms · Mobile apps · Client work</p>
+      <ul>
+        <li>Shipped client and product work across e-commerce, dashboards, real-time chat, and mobile applications.</li>
+      </ul>
+    </div>
+
+    <h2>Selected Projects</h2>
+    <div class="job">
+      <div class="job-head"><strong>NOANT Enterprise</strong><span class="when">Private</span></div>
+      <p class="job-org">Go 1.25 · Gin · React 18 · TypeScript · LLM (Llama 3.3 via Groq) · TiDB · Redis · Polar</p>
+      <ul><li>Multi-tenant AI customer support with human escalation across four messaging channels; custom Go semantic QA matching.</li></ul>
+    </div>
+    <div class="job">
+      <div class="job-head"><strong>GlobMint</strong><span class="when">Live on Sepolia</span></div>
+      <p class="job-org">Go · Solidity (EIP-1167, CREATE2) · Flutter · Riverpod · PostgreSQL</p>
+      <ul><li>Non-custodial stablecoin vaults — per-user on-chain addresses, ownerless contracts, indexer-backed ledger.</li></ul>
+    </div>
+    <div class="job">
+      <div class="job-head"><strong>Mailgeko</strong><span class="when">Open source core</span></div>
+      <p class="job-org">Next.js 16 · Go 1.25 · MySQL · Redis · Postgres + pgvector · Stripe · Resend · Docker</p>
+      <ul><li>Full email-marketing platform (contacts, segments, campaigns, automation, analytics) as one deployable image.</li></ul>
+    </div>
+
+    <h2>Skills</h2>
+    <div class="grid-2">
+      <div>
+        <ul>
+          <li><strong>Backend:</strong> Go (Gin), Node.js, REST, WebSockets, Redis, PostgreSQL, MySQL, TiDB, MongoDB</li>
+          <li><strong>Frontend:</strong> React 18, Next.js, TypeScript, Vite</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li><strong>Mobile:</strong> Flutter, Dart, Riverpod, React Native/Expo</li>
+          <li><strong>AI &amp; Web3:</strong> LLM APIs, RAG, vector search, Solidity, EVM, indexers</li>
+          <li><strong>Infra:</strong> Docker, Linux, CI/CD, Render, VPS, Stripe, Polar</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

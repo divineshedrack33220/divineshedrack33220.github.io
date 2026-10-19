@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zukaping — Real-Time Social Discovery App | Divine Shedrack</title>
+  <meta name="description" content="Zukaping by Divine Shedrack: real-time social discovery with location-based matchmaking. Flutter + Go/Gin + WebSockets + MongoDB. Live presence, chat and matching at low latency.">
+  <meta name="keywords" content="Zukaping, real-time dating app, location based matchmaking, Flutter social app, WebSocket chat Nigeria, Divine Shedrack Zukaping">
+  <meta name="author" content="Divine Shedrack">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://divineshedrack33220.github.io/work/zukaping.html">
+  <meta property="og:title" content="Zukaping — Real-Time Social Discovery | Divine Shedrack">
+  <meta property="og:description" content="Location-based matchmaking with live presence and chat. Flutter + Go + WebSockets by Divine Shedrack.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://divineshedrack33220.github.io/work/zukaping.html">
+  <meta property="og:image" content="https://divineshedrack33220.github.io/assets/avatar.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Zukaping",
+    "applicationCategory": "SocialNetworkingApplication",
+    "operatingSystem": "iOS, Android, Web",
+    "description": "Real-time social discovery app with location-based matchmaking. Flutter client, Go/Gin backend, WebSocket hub for presence and chat, MongoDB.",
+    "author": {
+      "@type": "Person",
+      "name": "Divine Shedrack",
+      "url": "https://divineshedrack33220.github.io/"
+    }
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230a0a0a'/><text x='16' y='22' font-family='monospace' font-size='14' font-weight='bold' fill='%23b8ff3c' text-anchor='middle'>DS</text></svg>">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://divineshedrack33220.github.io/" },
+      { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://divineshedrack33220.github.io/#projects" },
+      { "@type": "ListItem", "position": 3, "name": "Zukaping" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <nav class="nav" aria-label="Primary">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <span class="nav-logo-mark" aria-hidden="true">DS</span>
+        <span class="nav-logo-name">Divine Shedrack</span>
+      </a>
+      <a href="../resume.html" class="nav-cta" target="_blank" rel="noopener">Resume ↗</a>
+    </div>
+  </nav>
+
+  <main class="workpage">
+    <div class="container">
+      <a class="workpage-back" href="../index.html#projects">← All work</a>
+      <p class="workpage-eyebrow mono">CASE STUDY · REAL-TIME SOCIAL</p>
+      <h1>Zukaping</h1>
+      <p class="workpage-lede">Real-time social discovery with location-based matchmaking. Live presence, instant chat, and a WebSocket hub that keeps everyone in sync — Flutter on the client, Go on the wire.</p>
+
+      <div class="workpage-grid">
+        <div class="workpage-body">
+          <h2>The problem</h2>
+          <p>Social and dating apps live or die on latency. Polling kills presence; generic chat backends can't handle matchmaking state; cross-platform clients usually mean two codebases.</p>
+
+          <h2>The approach</h2>
+          <p>Zukaping runs a Go/Gin backend with a WebSocket hub for presence and messaging, a location-based matching pipeline that scores nearby users in real time, and a single Flutter codebase for iOS, Android and web. When a match is found, a direct room opens over the same socket layer — no polling, no third-party chat SDK.</p>
+          <ul>
+            <li>WebSocket hub: presence, typing, chat delivery at low latency</li>
+            <li>Location-based matchmaking pipeline (radius scoring)</li>
+            <li>Direct encrypted rooms opened on match</li>
+            <li>Flutter + Riverpod client — one codebase, three platforms</li>
+            <li>MongoDB for flexible social graph and message history</li>
+          </ul>
+
+          <h2>Stack</h2>
+          <p>Flutter · Dart · Riverpod · Go · Gin · WebSockets · MongoDB.</p>
+
+          <h2>Outcome</h2>
+          <p>A real-time matching system where presence and chat feel instant.</p>
+
+          <div class="workpage-cta">
+            <a class="btn btn-ghost" href="https://github.com/divineshedrack33220/zukaping" target="_blank" rel="noopener">View on GitHub ↗</a>
+          </div>
+        </div>
+
+        <aside class="workpage-aside">
+          <h3>At a glance</h3>
+          <dl>
+            <div><dt>Role</dt><dd>Creator — full stack</dd></div>
+            <div><dt>Status</dt><dd>Product</dd></div>
+            <div><dt>Domain</dt><dd>Social · Real-time · Matching</dd></div>
+            <div><dt>Client</dt><dd>Flutter + Riverpod</dd></div>
+            <div><dt>Backend</dt><dd>Go + Gin + WebSockets</dd></div>
+            <div><dt>Database</dt><dd>MongoDB</dd></div>
+            <div><dt>Latency</dt><dd>Presence + chat over one hub</dd></div>
+          </dl>
+          <a class="btn btn-primary btn-sm" href="../index.html#contact" style="width:100%;text-align:center">Hire Divine Shedrack</a>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="mono">© 2026 Divine Shedrack — Abuja, Nigeria</p>
+      <p class="footer-note"><a href="../index.html">Home</a> · <a href="../resume.html">Resume</a></p>
+    </div>
+  </footer>
+</body>
+</html>

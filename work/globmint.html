@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlobMint — Self-Custodial Stablecoin Vaults on Ethereum | Divine Shedrack</title>
+  <meta name="description" content="GlobMint by Divine Shedrack: self-custodial USDC savings and payments on Ethereum. Per-user CREATE2 vault clones, ownerless Solidity contracts, Go indexer + Flutter client. Live on Sepolia.">
+  <meta name="keywords" content="GlobMint, stablecoin wallet Ethereum, USDC vault Solidity, self-custodial crypto Nigeria, Divine Shedrack blockchain, CREATE2 EIP-1167">
+  <meta name="author" content="Divine Shedrack">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://divineshedrack33220.github.io/work/globmint.html">
+  <meta property="og:title" content="GlobMint — Self-Custodial Stablecoin Vaults | Divine Shedrack">
+  <meta property="og:description" content="Self-custodial USDC vaults on Ethereum — no banks, no admin keys. Go + Solidity + Flutter by Divine Shedrack.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://divineshedrack33220.github.io/work/globmint.html">
+  <meta property="og:image" content="https://divineshedrack33220.github.io/assets/avatar.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "GlobMint",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "iOS, Android, Web",
+    "description": "Self-custodial stablecoin savings and payments on Ethereum. Per-user vault clones deployed by a CREATE2 factory; ownerless contracts; Go indexer and ledger; Flutter client.",
+    "author": {
+      "@type": "Person",
+      "name": "Divine Shedrack",
+      "url": "https://divineshedrack33220.github.io/"
+    }
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230a0a0a'/><text x='16' y='22' font-family='monospace' font-size='14' font-weight='bold' fill='%23b8ff3c' text-anchor='middle'>DS</text></svg>">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://divineshedrack33220.github.io/" },
+      { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://divineshedrack33220.github.io/#projects" },
+      { "@type": "ListItem", "position": 3, "name": "GlobMint" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <nav class="nav" aria-label="Primary">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <span class="nav-logo-mark" aria-hidden="true">DS</span>
+        <span class="nav-logo-name">Divine Shedrack</span>
+      </a>
+      <a href="../resume.html" class="nav-cta" target="_blank" rel="noopener">Resume ↗</a>
+    </div>
+  </nav>
+
+  <main class="workpage">
+    <div class="container">
+      <a class="workpage-back" href="../index.html#projects">← All work</a>
+      <p class="workpage-eyebrow mono">CASE STUDY · LIVE ON SEPOLIA</p>
+      <h1>GlobMint</h1>
+      <p class="workpage-lede">Self-custodial stablecoin savings and payments on Ethereum — no banks, no fiat rails. Every account gets its own on-chain USDC vault. No owner. No admin. No one who can freeze your money.</p>
+
+      <div class="workpage-grid">
+        <div class="workpage-body">
+          <h2>The problem</h2>
+          <p>Crypto products usually ask users to trust a company with their keys — or force wallet-connect flows that confuse newcomers. Banks and fiat rails add KYC, delays and counterparty risk.</p>
+
+          <h2>The approach</h2>
+          <p>GlobMint is non-custodial by construction. A CREATE2 factory deploys an EIP-1167 minimal proxy vault per account, so every user has a deterministic, unique on-chain address that can receive USDC from anyone — no wallet connection needed to deposit. The vault contracts have no owner and no admin functions: funds cannot be seized or frozen by anyone, including the developer.</p>
+          <ul>
+            <li>Per-user vault clones (EIP-1167) via CREATE2 factory — deterministic addresses</li>
+            <li>Ownerless Solidity contracts — no admin key exists</li>
+            <li>Go API: indexer watches chain events, credits an internal ledger for fast balances</li>
+            <li>Withdrawal intents relayed and signed by the backend signer</li>
+            <li>Flutter client (Riverpod) for web and mobile</li>
+          </ul>
+
+          <h2>Stack</h2>
+          <p>Go · Solidity (EVM, CREATE2, EIP-1167) · Flutter + Riverpod · PostgreSQL 16 · Ethereum Sepolia (mainnet staged).</p>
+
+          <h2>Outcome</h2>
+          <p>Live on Sepolia testnet. Users hold and move USDC without banks, without wallet-connect gymnastics, and without trusting anyone with custody.</p>
+
+          <div class="workpage-cta">
+            <a class="btn btn-ghost" href="https://github.com/divineshedrack33220/globmint" target="_blank" rel="noopener">View on GitHub ↗</a>
+          </div>
+        </div>
+
+        <aside class="workpage-aside">
+          <h3>At a glance</h3>
+          <dl>
+            <div><dt>Role</dt><dd>Creator — full stack + contracts</dd></div>
+            <div><dt>Status</dt><dd>Live on Sepolia · mainnet staged</dd></div>
+            <div><dt>Domain</dt><dd>Fintech · Stablecoins · Ethereum</dd></div>
+            <div><dt>Contracts</dt><dd>Solidity, CREATE2, EIP-1167</dd></div>
+            <div><dt>Backend</dt><dd>Go indexer + ledger API</dd></div>
+            <div><dt>Client</dt><dd>Flutter + Riverpod</dd></div>
+            <div><dt>Asset</dt><dd>USDC (USD stablecoin)</dd></div>
+          </dl>
+          <a class="btn btn-primary btn-sm" href="../index.html#contact" style="width:100%;text-align:center">Hire Divine Shedrack</a>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="mono">© 2026 Divine Shedrack — Abuja, Nigeria</p>
+      <p class="footer-note"><a href="../index.html">Home</a> · <a href="../resume.html">Resume</a></p>
+    </div>
+  </footer>
+</body>
+</html>
